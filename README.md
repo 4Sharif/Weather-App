@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather App
 
-## Getting Started
+This **Weather App** provides real-time forecasts with a modern, responsive design. Built for desktop and mobile (Soon), the app combines clean visuals with useful data, like temperature, forecasts, and conditions in an adaptive dashboard layout.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Dynamic Weather Dashboard** — Displays current location, temperature, highs/lows, and detailed weather descriptions.  
+- **Hourly Forecast View** — Shows temperature changes for the next five hours using animated temperature bars.  
+- **Adaptive Layouts** —  
+  - **Desktop:** Full dashboard view with search, settings, and daily/weekly overview.  
+  - **Mobile (Soon):** Compact real-time forecast window optimized for smaller screens.  
+- **Gradient Weather Themes** — The background color adjusts based on conditions (e.g., sunny, cloudy, rainy).  
+- **Location Search & Saved Cities** — Smooth expanding search box with scrollable results and star-based favorites.  
+- **Professional Forecast Summaries** — Auto-generated summaries for both daily and weekly forecasts.  
+- **Custom Settings** — Options for saved cities, temperature units, and theme preferences.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Frontend:** Next.js, TypeScript, React, CSS 
+- **API:** OpenWeather or similar weather data API  
+- **Data Handling:** JSON (local storage for favorites)  
+- **Design:** Linear gradients, smooth transitions, responsive grid/flexbox structure  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd weather-app
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Open your browser** and navigate to `http://localhost:3000`
+
+5. **For live weather data:** Add your OpenWeather API key to the environment variables (see `.env.local.example`)  
+
+---
+
+## Notes
+
+- The desktop view includes a dual-panel layout (dashboard + forecast window).  
+- Mobile users will automatically see the simplified forecast window only.  
+- All icons and gradients are dynamically updated to match the current weather description.  

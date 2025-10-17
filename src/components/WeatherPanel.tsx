@@ -5,8 +5,7 @@ import { format } from 'date-fns'
 
 export default function WeatherPanel() {
   const [currentTime] = useState(new Date())
-  
-  // Mock data matching wireframes exactly
+   
   const weatherData = {
     location: 'Atlanta',
     region: 'Georgia',
